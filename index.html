@@ -5,16 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/root.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css//fires.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+
+    <style>
+        .jBox-content {
+            color: gray
+        }
+    </style>
+
+
     <title>Archon Landing 2.0</title>
 </head>
 
 <body class="body">
     <header>
+
         <div class="header container">
             <div class="sandwich js-sandwich">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,7 +49,12 @@
                     </defs>
                 </svg>
 
+
+
+
             </div>
+
+
             <div class="logo__wrap">
                 <a class="logo" href="#">
                     <svg width="121" height="24" viewBox="0 0 121 24" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -224,8 +250,8 @@
                     <p class="banner__pre-header">archon chain protocol’s</p>
                     <h1 class="banner__title">Web3 Potential<br /><span class="acctent">unleashed</span></h1>
                     <p class="banner__paragraph">Decentralized protocol economy for scientific research, built on the
-                        foundation of a central
-                        bedrock principle - that of continuity of storage.</p>
+                        foundation of a central bedrock principle - that of continuity of storage.
+                    </p>
                     <div class="banner__btns">
                         <a class="banner__btn" href="#">
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
@@ -374,18 +400,9 @@
                         <p class="regular-paragraph pt-16px hover-container">
 
                             The chain is built around the
-                            <span class="hover-target dashed-decoration" tabindex="0">Proof of Private Segment
-                                Storage
-                                <span class="hover-popup">
-                                    <!-- <div class=""> -->
-                                    Archon features a dynamic <b>Node Replacement</b> system, where any and all
-                                    inactive
-                                    nodes
-                                    are instantly purged from the network and replaced.
-                                    <!-- </div> -->
-
-                                </span>
-                            </span>
+                            <span class="tooltip-span dashed-decoration"
+                                title="Archon features a dynamic <b>Node Replacement</b> system, where any and all inactive nodes are instantly purged from the network and replaced.">Proof
+                                of Private Segment Storage</span>
                             algorithm, and its underlying
                             concept is based on the foundation of a central bedrock principle - that of continuity of
                             storage.
@@ -974,6 +991,18 @@
     </footer>
     <script src="./js/index.js"></script>
 
+    <script>
+        new jBox('Tooltip', {
+            attach: '.tooltip-span',
+            delayOpen: 500,
+            delayClose: 1000,
+            position: {
+                x: 'center',
+                y: 'top'
+            },
+        });
+
+    </script>
 </body>
 
 </html>

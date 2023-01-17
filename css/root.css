@@ -207,6 +207,10 @@ footer {
     /* overflow-x: hidden; */
 }
 
+/* .container>div {
+    padding: 0 20px;
+} */
+
 .body.nav-open {
     overflow-y: hidden;
 }
@@ -468,9 +472,11 @@ footer {
     /* display: flex; */
     /* flex-direction: column; */
     /* justify-content: space-between; */
-    bottom: 10px;
+    /* bottom: 10px; */
+    bottom: 100%;
     left: 0%;
     width: 40ch;
+    /* max-width: ; */
     margin: min(1rem, 20px);
     font-size: .8rem;
     background-color: #fff;
