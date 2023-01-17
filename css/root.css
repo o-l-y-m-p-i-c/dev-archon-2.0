@@ -128,6 +128,11 @@ input {
     -webkit-appearance: none;
 }
 
+html {
+    /* width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden; */
+}
 
 body {
     /* padding-top: 100px; */
@@ -135,10 +140,13 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    max-width: 100%;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+    /* max-width: 100%; */
     color: var(--main-text-color);
     font-family: 'Inter', sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     font-size: var(--main-text-size);
     line-height: var(--main-line-height);
 }
