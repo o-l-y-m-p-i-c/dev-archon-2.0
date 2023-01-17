@@ -132,7 +132,7 @@ html {
     /* width: 100%;
     max-width: 100vw;
     overflow-x: hidden; */
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     /* max-width: 100%; */
 }
 
@@ -150,8 +150,8 @@ body {
     flex-direction: column;
     height: 100vh;
     width: 100%;
-    max-width: 100vw;
-    overflow-x: hidden;
+    /* max-width: 100vw;
+    overflow-x: hidden; */
     /* max-width: 100%; */
     color: var(--main-text-color);
     font-family: 'Inter', sans-serif;
