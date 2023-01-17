@@ -570,6 +570,7 @@ svg .circle-fill {
 .maturity-of-research {
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .maturity-of-research__popup svg {
