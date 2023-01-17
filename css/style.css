@@ -34,8 +34,8 @@ section {
 .banner::after {
     content: '';
     position: absolute;
-    width: 61vw;
-    height: 70vw;
+    width: 40vw;
+    height: 40vw;
     left: 45vw;
     top: -36vw;
 
