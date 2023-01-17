@@ -33,8 +33,8 @@ document.querySelectorAll('.js-m-click').forEach(item => {
 })
 
 
-const checkMenu = () => {
-    const top = -document.body.getBoundingClientRect().top
+const checkMenu = (y) => {
+    const top = y || -document.querySelector('.js-container').getBoundingClientRect().top
     if (top > 90) {
         document.body.classList.add('scrolled')
     } else {
@@ -42,9 +42,14 @@ const checkMenu = () => {
     }
 }
 
-window.onscroll = (e) => {
-    checkMenu()
+document.querySelector('.container-overflow-hidden').onscroll = (e) => {
+    checkMenu(e.originalTarget.scrollTop)
 }
+document.querySelector('.container-overflow-hidden').onresize = (e) => {
+    checkMenu(e.originalTarget.scrollTop)
+}
+
 window.onresize = () => {
-    checkMenu()
+    const y = document.querySelector('.container-overflow-hidden').scrollTop
+    checkMenu(y)
 }
