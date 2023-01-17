@@ -638,6 +638,7 @@ svg .circle-fill {
     }
 
     .maturity-of-research__slider {
+        display: none;
         order: 3
     }
 
