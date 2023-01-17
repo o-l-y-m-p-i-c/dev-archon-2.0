@@ -161,6 +161,25 @@ body {
     line-height: var(--main-line-height);
 }
 
+body {
+    overflow: hidden;
+}
+
+
+
+.jBox-content {
+    color: gray
+}
+
+
+
+
+.container-overflow-hidden {
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+}
+
 section {}
 
 header {
