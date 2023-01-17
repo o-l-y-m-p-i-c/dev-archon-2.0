@@ -43,10 +43,15 @@ const checkMenu = (y) => {
 }
 
 document.querySelector('.container-overflow-hidden').onscroll = (e) => {
-    checkMenu(e.originalTarget.scrollTop)
+    if (e.originalTarget.scrollTop) {
+        checkMenu(e.originalTarget.scrollTop)
+    }
+
 }
 document.querySelector('.container-overflow-hidden').onresize = (e) => {
-    checkMenu(e.originalTarget.scrollTop)
+    if (e.originalTarget.scrollTop) {
+        checkMenu(e.originalTarget.scrollTop)
+    }
 }
 
 window.onresize = () => {
