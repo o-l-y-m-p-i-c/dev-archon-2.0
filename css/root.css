@@ -132,7 +132,7 @@ html {
     /* width: 100%;
     max-width: 100vw;
     overflow-x: hidden; */
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     /* max-width: 100%; */
 }
 
@@ -149,9 +149,10 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
+    overflow-x: hidden;
     /* max-width: 100vw;
-    overflow-x: hidden; */
+    /* overflow-x: hidden;  */
     /* max-width: 100%; */
     color: var(--main-text-color);
     font-family: 'Inter', sans-serif;
@@ -195,10 +196,15 @@ footer {
     /* background-color: red; */
 }
 
+/* section {
+    overflow-x: hidden;
+} */
+
 .container {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 1200px;
+    /* overflow-x: hidden; */
 }
 
 .body.nav-open {
